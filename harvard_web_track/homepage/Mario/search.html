@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>It's meeeee Mariooooo</title>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <a href="index.html">Profile</a>
+                </td>
+                <td>
+                    <a href="about.html">About me</a>
+                </td>
+                <td>
+                    <a href="friends.html">Friends</a>
+                </td>
+                <td>
+                    <a href="search">Search</a>
+                </td>
+                <td>
+                    <a href="contact.html">Contact me</a>
+                </td>
+            </tr>
+        </table>
+        <h1>Searching...</h1>
+        <p>Use this box to search something in google!</p>
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="text">
+            <input type="submit" value="search">
+        </form>
+    </body>
+    <script>
+            let body = document.querySelector('body');
+            body.style.backgroundColor = "red"
+            function blink()
+            {
+                if(body.style.backgroundColor === 'red')
+                {
+                    body.style.backgroundColor = "blue";
+                }
+                else
+                {
+                    body.style.backgroundColor = "red";
+                }
+            }
+            window.setInterval(blink, 10);
+        </script>
+</html>

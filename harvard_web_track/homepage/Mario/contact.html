@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <title>It's meeeee Mariooooo</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <a href="index.html">Profile</a>
+                </td>
+                <td>
+                    <a href="about.html">About me</a>
+                </td>
+                <td>
+                    <a href="friends.html">Friends</a>
+                </td>
+                <td>
+                    <a href="search">Search</a>
+                </td>
+                <td>
+                    <a href="contact.html">Contact me</a>
+                </td>
+            </tr>
+        </table>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Visit me
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="https://www.linkedin.com/in/mariomxavier/">Linkedin</a>
+            <a class="dropdown-item" href="https://twitter.com/mario_m_xavier">Twitter</a>
+            <a class="dropdown-item" href="https://www.facebook.com/mmxavier">Facebook</a>
+          </div>
+        </div>
+        <button id="red">R</button>
+        <button id="green">G</button>
+        <button id="blue">B</button>
+        <script>
+            document.querySelector("#red").onclick = function (){
+                if (document.body.style.backgroundColor != "red")
+                {
+                    document.body.style.backgroundColor = "red";
+                }
+                else
+                {
+                    document.body.style.backgroundColor = "initial";
+                }
+            }
+
+                 document.querySelector("#green").onclick = function (){
+                if (document.body.style.backgroundColor != "green")
+                {
+                    document.body.style.backgroundColor = "green";
+                }
+                else
+                {
+                    document.body.style.backgroundColor = "initial";
+                }
+            }
+
+                 document.querySelector("#blue").onclick = function (){
+                if (document.body.style.backgroundColor != "blue")
+                {
+                    document.body.style.backgroundColor = "blue";
+                }
+                else
+                {
+                    document.body.style.backgroundColor = "initial";
+                }
+            }
+
+        </script>
+    </body>
+</html>

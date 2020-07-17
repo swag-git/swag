@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>It's meeeee Mariooooo</title>
+    <script>
+        let counter = 0;
+        function increment()
+        {
+            counter++;
+            document.querySelector("#result").innerHTML = counter;
+            if (counter === 5)
+            {
+                alert("Congratulations! Five clicks!");
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <a href="index.html">Profile</a>
+                </td>
+                <td>
+                    <a href="about.html">About me</a>
+                </td>
+                <td>
+                    <a href="friends.html">Friends</a>
+                </td>
+                <td>
+                    <a href="search">Search</a>
+                </td>
+                <td>
+                    <a href="contact.html">Contact me</a>
+                </td>
+            </tr>
+        </table>
+        <h1>This page is about me</h1>
+        <p>And here is a paragraph with some introduction</p>
+        <h2>This is my first section</h2>
+        <p>More funny content!</p>
+        <p>And even more funny!</p>
+        <h2>This is the second section</h2>
+        <p>Nothing much to say tho...</p>
+        <form onsubmit="increment(); return false;">
+            <input type="submit" value="Count">
+            <div id="result">
+                0
+            </div>
+        </form>
+    </body>
+</html>
